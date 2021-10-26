@@ -1,0 +1,23 @@
+{
+  "name": "love-coffe",
+  "version": "1.0.0",
+  "description": "Sitio web para una cafetería",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdojeda/love-coffee.git"
+  },
+  "author": "Ojedaweb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdojeda/love-coffee/issues"
+  },
+  "homepage": "https://github.com/rdojeda/love-coffee#readme"
+}

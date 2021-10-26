@@ -1,0 +1,101 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+/*Styles Header*/
+    .home-bg{
+            background-color: $dark-color;
+            @include header-bg($gradient, url("https://res.cloudinary.com/ojedaweb/image/upload/v1635030304/love-coffee-el-mejor-cafe_lxnub2_bfa265.jpg"));
+
+            .header__container{
+                    @include header-container;
+                    .header__texts{
+                        @include header-texts;
+                        .header__title{
+                            @include header-title;
+                        }
+                        .header__subtitle{
+                            @include header-subtitle;
+                        }
+
+                    }
+            }
+        
+    }
+    .nosotros-bg{
+            @include header-bg($gradient, url("https://res.cloudinary.com/ojedaweb/image/upload/v1635030361/nosotros-love-Coffe_bba2ih.jpg"));
+             .header__container{
+                    @include header-container;
+                    .header__texts{
+                        @include header-texts;
+                        .header__title{
+                            @include header-title;
+                        }
+                        .header__subtitle{
+                            @include header-subtitle;
+                        }
+
+                    }
+            }
+        
+        
+    }
+    .menu-bg{
+            @include header-bg($gradient, url("https://res.cloudinary.com/ojedaweb/image/upload/v1635030303/delicioso-cafe-menu-love-coffee-_wxoef8.jpg"));
+    
+            .header__container{
+                    @include header-container;
+                    .header__texts{
+                        @include header-texts;
+                        .header__title{
+                            @include header-title;
+                        }
+                        .header__subtitle{
+                            @include header-subtitle;
+                        }
+
+                    }
+            }
+        
+    
+        }
+    .reservas-bg{
+            @include header-bg($gradient, url("https://res.cloudinary.com/ojedaweb/image/upload/v1635030378/reservas-love-Coffee-mujer-que-usa-telefono-movil_conmpo.jpg"));
+             .header__container{
+                    @include header-container;
+                    .header__texts{
+                        @include header-texts;
+                        .header__title{
+                            @include header-title;
+                        }
+                        .header__subtitle{
+                            @include header-subtitle;
+                        }
+
+                    }
+            }
+        
+    }
+    .contacto-bg{
+            @include header-bg($gradient, url("https://res.cloudinary.com/ojedaweb/image/upload/v1635030303/contacto-love-coffee_vgdfk1.jpg"));
+            .header__container{
+                    @include header-container;
+                    .header__texts{
+                        @include header-texts;
+                        .header__title{
+                            @include header-title;
+                        }
+                        .header__subtitle{
+                            @include header-subtitle;
+                        }
+
+                    }
+            }
+        
+        
+    }
+    
+
+        
+
+
+

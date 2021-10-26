@@ -1,0 +1,81 @@
+/* Mixin Header*/
+@import "../utilities/variables";
+
+
+@mixin header-bg($gradient, $imgPath){
+    overflow:hidden;
+    height: 100vh;
+
+    background: {
+        image: $gradient, $imgPath;
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+        color: $dark-color;
+        
+    }
+
+}
+
+@mixin footer-bg($gradient-footer, $imgPath){
+    overflow:hidden;
+    height: 100%;
+
+    background: {
+        image: $gradient-footer, $imgPath;
+        repeat: no-repeat;
+        position: left top;
+        size: cover;
+        attachment: fixed;
+        color: $dark-color;
+        
+    }
+}
+
+@mixin header-container{
+        width: 90%;
+        max-width: 1200px;
+        overflow: hidden;
+        margin: auto;
+        padding: 0.5rem;
+}
+@mixin header-texts{
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+}
+@mixin header-title{
+        font-size: 15vmin;
+        font-weight: bold;
+        color: $light-color; 
+ }
+@mixin header-subtitle{
+        font-size: 5vmin;
+        color: $light-color;
+        line-height: 1.4;
+        span{
+            color: $warm-color;
+            font-weight: 700;
+        }
+}
+@mixin h2{
+     text-transform: uppercase !important;
+     letter-spacing: 0.25rem;
+     padding: 1.5rem 1.5rem 0 1.5rem;
+     font-weight: bolder;
+     color: $coffee-color;
+}
+
+@mixin h3{
+    color: $beige-color;
+    padding: 0 1.5rem 0 1.5rem;
+}
+@mixin p{
+    padding: 0 1.5rem 0 1.5rem;
+    line-height: 2em;
+    color: $gray-color;
+    font-size: 1.15rem;
+}

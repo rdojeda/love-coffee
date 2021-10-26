@@ -1,0 +1,29 @@
+/*Styles Tables*/
+main{
+    section{
+        .container{
+            .row{
+                .wrapper-table{
+                    table{
+                    border-collapse: separate;
+                    border-spacing: 20px;
+                       tr{
+                          td{
+                                h3{
+                                     color: $beige-color;
+                                     border-bottom: 1px solid $beige-color;
+                                     
+                                }  
+                                p{
+                                      color: $gray-color;
+                                }
+                          }
+                       } 
+                    }
+                }
+                
+            }
+        }
+    }
+} 
+

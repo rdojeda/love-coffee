@@ -1,0 +1,77 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+/*Styles Footer*/
+footer{
+    background-color: $dark-color;
+    .bg-img-footer{
+         @include footer-bg($gradient-footer, url("https://res.cloudinary.com/ojedaweb/image/upload/v1634428628/top-10-de-los-mejores-granos-de-cafe-para-maquinas-automaticas-de-espresso-min_btfkhj.jpg"));
+    }
+            .localiza{
+                .contacto, .ubicacion, .horarios{
+                    h4{
+                        color: $beige-color;
+                        font-size: 1.25rem;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        color: $gray-color;
+                    }
+                    i{
+                        color: $warm-color;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+            }
+            .navbar-footer{
+            padding-top: 3rem;
+                ul{
+                    li{
+                        a{
+                            font-size: 1.5rem;
+                            color: $gray-color;
+                            &:hover{
+                                color: $beige-color !important;
+                            }
+                            &:active{
+                                color: $beige-color !important;
+                            }
+                        
+                        }
+                    }
+                }
+            }
+            .sociales{
+                ul {
+                    li{
+                        a{
+                            padding: 2rem;
+                        
+                            i{
+                                color: $beige-color;
+                                    &:hover{
+                                    color: $brown-color !important;
+                                }
+                            }
+                        
+                                
+                        }
+                    }
+                }
+            }   
+            .copy{
+            p {
+                color: $gray-color;
+                text-align: center;
+                font-size: 1rem !important;
+                padding: 0.2rem;
+                    span{
+                        color: $brown-color;
+                    }
+            }
+            }
+
+
+    }
+    
+

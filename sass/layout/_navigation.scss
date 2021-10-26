@@ -1,0 +1,94 @@
+/*Styles Navigation en Header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    height: 120px;
+    box-shadow: 0px 9px 11px -3px rgba(45,36,36,0.82);
+    background-color: $dark-color;
+    color: white;
+        .navigation__container{
+            display: flex;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            .navigation__logo{
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+            .navigation__label{
+                display: none;
+            }
+            .navigation__input{
+               display: none;
+            }
+            .navigation__menu{
+                margin-top: 2.5rem;
+                display: grid;
+                grid-auto-flow: column;
+                gap: 3em;
+            
+                .navigation__item{
+                    color: #fff;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+                   
+                    &:after{
+                            content:"";
+                            display: block;
+                            background-color:  #FFF;
+                            width: 90%;
+                            margin-top: 3px;
+                            height: 3px;
+                            clip-path: var(--clippy);
+                            transition: clip-path .5s;
+                    }
+                    &:hover{
+                              --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+            
+            }
+    }
+
+}
+
+
+@media(max-width: 700px){
+    .navigation{
+       
+        
+        .navigation__container{
+            .navigation__label{
+            display: block;
+            cursor: pointer;
+            }
+            .navigation__input:checked + .navigation__menu{
+                  clip-path: circle(95% at center);
+            }
+            .navigation__menu{
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            background-color: $dark-color;
+            width: 100%;
+            left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+            }
+        }
+    }
+
+
+}

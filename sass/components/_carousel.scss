@@ -1,0 +1,185 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+/*Styles Carousel Home Section Gallery*/
+
+.gallery{
+    color: #000;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: 
+    "content";
+    min-height: 100vh;
+    padding-top: 5em;
+    .wrapper{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .gallery__main{
+        grid-area: content;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 180px;
+        align-items: center;
+        .gallery__texts{
+            .gallery__title{
+                @include h2;
+                               
+            }
+            .gallery__subtitle{
+               
+                @include h3;
+            }
+            .gallery__paragraph{
+                @include p;
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+   .gallery{
+       .gallery__main {
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content max-content;
+            text-align: center;
+            .gallery__picture{
+                grid-row: 1/2;
+                .gallery__img{
+                    max-width: 500px;
+                    display: block;
+                    margin: 0 auto;
+            
+                }
+            }
+        }
+   }
+    
+   
+}
+
+/* Styles Carrousel de imágenes Testimoniales Nosotros Main*/
+main{
+    .testimonial-section{
+    background-color: #ffffff;
+    padding: 80px 0;
+    min-height: 100vh;
+        h2{
+          text-transform: uppercase !important;
+          letter-spacing: 0.25em;
+          padding: 1.5rem 1.5rem 0 1.5rem;
+          font-weight: bolder;
+          color: $coffee-color;
+          text-align: right;
+        }
+         h3{
+            color: $beige-color;
+            padding: 0 1.5rem 0 1.5rem;
+            text-align: right;
+        }
+        .testi-img{
+            .img-box{
+                 max-width: 360px;
+                 margin:auto;
+                 text-align: center;
+                 position: relative;
+                .circle{
+                    height: 360px;
+                    width: 360px;
+                    background-color: #fb9c9a;
+                    position: absolute;
+                    border-radius: 50%;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.5s ease;
+                }
+                .img-box-inner{
+                    position: relative;
+                    border-radius: 0 0 180px 180px;
+                    overflow:hidden;
+                    img {
+                         max-width: 310px;
+                    }
+                }
+            }
+        }
+        .col-md-6{
+            #myCarousel{
+                .carousel-inner{
+                    margin-bottom: 20px;
+                    .testi-item{
+                        h4{
+                            color: $beige-color;
+                            padding: 0 1.5rem 0 1.5rem;
+                            text-transform: capitalize;
+                            font-size: 1.25em;
+                            text-align: right;
+                        }
+                        p{
+                             padding: 0 1.5rem 0 1.5rem;
+                            line-height: 2.15em;
+                            color: $gray-color;
+                        }
+                     }
+                }
+                .carousel-control-prev{
+                    margin-right: 10px;
+                    position: relative;
+                    height: 35px;
+                    width: 35px;
+                    background-color: #fb9c9a;   
+                    display: inline-flex;
+                    border-radius: 50%;
+                }
+                .carousel-control-next{
+                    position: relative;
+                    height: 35px;
+                    width: 35px;
+                    background-color: #fb9c9a;   
+                    display: inline-flex;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+/* Responsive */
+@media only screen and (max-width:991px){
+    main{    
+        .testimonial-section{
+            .testi-img{
+                .img-box{
+                    max-width: 300px;
+                    .circle{
+                        height: 300px;
+                        width: 300px;
+                    }
+                    .img-box-inner{
+                         border-radius: 0 0 150px 150px;
+                            img{
+                                 max-width: 230px;
+                            }   
+                    }
+                }
+            }
+        }
+       
+    }
+}
+
+@media only screen and(max-width:767px){
+    main{
+        .testimonial-section{
+            .testi-img{
+                margin-bottom: 25px;
+            }
+        }
+   }
+   
+}

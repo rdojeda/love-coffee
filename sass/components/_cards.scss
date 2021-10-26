@@ -1,0 +1,136 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+/* Styles cards Team Love Coffee Main Nosotros */
+.flex-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .flex-card__container{
+            position: relative;
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+                .flex-card__item{
+                    position: relative;
+                    max-width: 300px;
+                    height: 215px;
+                    background-color: $coffee-color;
+                    margin: 30px 10px;
+                    padding: 20px 0;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+                    transition: 0.3s ease-in-out;
+                        &:hover{
+                            height: 630px;
+                        }
+                        &:hover .flex-card__content .flex-card__texts{
+                            visibility: visible;   
+                            opacity: 1;
+                            margin-top: -40px;
+                            transition-delay: 0.3s;
+                        }
+                        .flex-card__content{
+                            .flex-card__picture{
+                                position: relative;
+                                width: 260px;
+                                height: 260px;
+                                top:-60px;
+                                left: 20px;
+                                z-index: 1;
+                                box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+                            }
+                            .flex-card__picture .flex-card__img{
+                                max-width: 100%;
+                                border-radius: 4px;
+                            }
+                            .flex-card__texts{
+                                padding: 10px 15px;
+                                position: relative;
+                                margin-top: -140px;
+                                text-align: center;
+                                color: #111;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.3s ease-in-out;
+                                   
+                                .flex-card__title{
+                                   text-transform: uppercase;
+                                   font-size: 1.25rem;
+                                   color: white;
+                                }
+                                .flex-card__subtitle{
+                                    color: $beige-color;
+                                    font-size: 1rem;
+                                }
+                                .flex-card__paragraph{
+                                    color: $gray-color;
+                                    font-size: 0.95rem;
+                                }
+                            }
+                        }
+                }
+        }
+
+    }
+
+/*Styles Cards Main Menu*/
+
+.cards-menu{
+    width:90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:3.5rem;
+    flex-wrap: wrap;
+    .cards-menu__item{
+        background-color: $dark-color;
+        padding-bottom: 3rem;
+        flex-basis: 280px;
+        max-width: 450px;
+        flex-grow: 1;
+        .cards-menu__content{
+            width: 90%;
+            margin: 0 auto;
+            .cards-menu__picture{
+                width: 90%;
+                margin: 0 auto;
+                background-color: cornflowerblue;
+                position: relative;
+                bottom: 2rem;
+                .cards-menu__img{
+                    width: 100%;
+                }
+            }
+            .cards-menu__texts{
+                text-align: center;
+                h2{
+                    margin-bottom: 1rem;
+                    @include h2;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+                h3{
+                    padding-bottom: 0.5rem;
+                    @include h3;
+                }
+                p{
+                    padding: 1rem 0;
+                    @include p;
+                }
+                img{
+                    color: $beige-color;
+                }
+            }
+        }
+
+    }
+}

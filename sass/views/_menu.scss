@@ -1,0 +1,11 @@
+/*Styles Main Menu */
+.main-menu{
+    h2{
+        @include h2;
+        margin: 3rem 0;
+        text-align: center;
+        span{
+            color: $brown-color;
+        }
+    }
+}

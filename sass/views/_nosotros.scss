@@ -1,0 +1,39 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+/* Styles grid card Nosotros */
+.section-card{
+    margin-bottom: 5rem;
+    h2{
+        @include h2;
+        text-align: center;
+        padding: 2rem;
+    }
+    .grid-card{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        
+        .grid-card__subtitle{
+            @include h3;
+        }
+        .grid-card__paragraph{
+            @include p;
+        }
+    }
+}
+
+.flex-card-team{
+    h2{
+        @include h2;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+

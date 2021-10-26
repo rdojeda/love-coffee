@@ -1,0 +1,62 @@
+@import "../utilities/variables";
+
+/*Styles Home - Main*/
+.grid{
+    color: #000;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: 
+    "content";
+    min-height: 100vh;
+    padding-top: 5em;
+    .wrapper{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .grid__main{
+        grid-area: content;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 180px;
+        align-items: center;
+        .grid__texts{
+            .grid__title{
+                @include h2;
+                               
+            }
+            .grid__subtitle{
+               
+                @include h3;
+            }
+            .grid__paragraph{
+                @include p;
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+   .grid{
+       .grid__main {
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content max-content;
+            text-align: center;
+            .grid__picture{
+                grid-row: 1/2;
+                .grid__img{
+                    max-width: 500px;
+                    display: block;
+                    margin: 0 auto;
+            
+                }
+            }
+        }
+   }
+}   
+    
+
+
