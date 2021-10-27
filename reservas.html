@@ -91,7 +91,7 @@
                                 </div>
                                  <div class="col">
                                     <label class="form-label" for="asientos">Asientos</label>
-                                    <input class="form-control" type="number" name="asientos" required>
+                                    <input class="form-control" type="number" min="0" max="30" step="1" name="asientos" required>
                                      <div class="valid-feedback">
                                         <p class="text-uppercase text-info">Campo OK</p>
                                     </div>
@@ -111,7 +111,7 @@
                                 </div>
                                  <div class="col">
                                     <label class="form-label" for="hora">Hora</label>
-                                    <input class="form-control" type="time" name="hora" required>
+                                    <input class="form-control" type="time" min="09:00" max="20:00" name="hora" required>
                                      <div class="valid-feedback">
                                         <p class="text-uppercase text-info">Campo OK</p>
                                     </div>
