@@ -11500,6 +11500,14 @@ footer .copy p span {
 
 /* Variables */
 /*Styles comunes a los Forms*/
+main section .bg-forms {
+  background-image: url("https://res.cloudinary.com/ojedaweb/image/upload/v1635390677/header-granos-cafe_fiaeih.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 160px;
+}
 main section .container .row .contact-form h2, main section .container .row .contact-form .h2 {
   text-transform: uppercase !important;
   letter-spacing: 0.25em;
