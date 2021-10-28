@@ -11513,7 +11513,7 @@ main section .container .row .contact-form h2, main section .container .row .con
   letter-spacing: 0.25em;
   padding: 1.5rem 1.5rem 0 1.5rem;
   font-weight: bolder;
-  color: #2d2424;
+  color: #5c3d2e;
 }
 main section .container .row .contact-form form {
   padding: 3em;
@@ -11530,7 +11530,7 @@ main section .container .row .contact-form form input, main section .container .
 main section .container .row .contact-form form label {
   color: #2d2424;
   font-size: 1.35rem;
-  font-weight: lighter;
+  font-weight: 500;
 }
 main section .container .row .contact-form form button {
   padding: 0.5em;

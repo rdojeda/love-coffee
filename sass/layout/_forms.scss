@@ -23,7 +23,7 @@ main{
                         letter-spacing: 0.25em;
                         padding: 1.5rem 1.5rem 0 1.5rem;
                         font-weight: bolder;
-                        color: $dark-color;
+                        color: $coffee-color;
                     }
                     form{
                         padding: 3em;
@@ -40,7 +40,8 @@ main{
                         label{
                             color: $dark-color;
                             font-size: 1.35rem;
-                            font-weight: lighter;
+                            font-weight:500;
+
                         }
                         button{
                             padding: 0.5em;
