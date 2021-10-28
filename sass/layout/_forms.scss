@@ -14,7 +14,7 @@ main{
                         letter-spacing: 0.25em;
                         padding: 1.5rem 1.5rem 0 1.5rem;
                         font-weight: bolder;
-                        color: $coffee-color;
+                        color: $dark-color;
                     }
                     form{
                         padding: 3em;
@@ -22,11 +22,14 @@ main{
                             border: none;
                             outline: 0;
                             background: none;
-                            color: $beige-color;
-                            border-bottom: 1px solid $beige-color;
+                            color: $dark-color;
+                            
+                        }
+                        input, textarea{
+                            border-bottom: 2px solid $dark-color;
                         }
                         label{
-                            color: $beige-color;
+                            color: $dark-color;
                             font-size: 1.35rem;
                             font-weight: lighter;
                         }
