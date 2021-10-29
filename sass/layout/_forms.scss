@@ -26,6 +26,7 @@ main{
                         color: $coffee-color;
                     }
                     form{
+                       
                         padding: 3em;
                         input, textarea, button{
                             border: none;
@@ -34,13 +35,23 @@ main{
                             color: $dark-color;
                             
                         }
+                        input[type="time"]::-webkit-calendar-picker-indicator {
+                             background: none;
+                        }
+                        input[type="date"]::-webkit-calendar-picker-indicator {
+                             background: none;
+                        }
                         input, textarea{
                             border-bottom: 2px solid $dark-color;
                         }
+                        .beige{
+                                color: $beige-color;
+                            }
                         label{
                             color: $dark-color;
                             font-size: 1.35rem;
                             font-weight:500;
+                           
 
                         }
                         button{

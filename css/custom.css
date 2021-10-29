@@ -11524,8 +11524,17 @@ main section .container .row .contact-form form input, main section .container .
   background: none;
   color: #2d2424;
 }
+main section .container .row .contact-form form input[type=time]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+main section .container .row .contact-form form input[type=date]::-webkit-calendar-picker-indicator {
+  background: none;
+}
 main section .container .row .contact-form form input, main section .container .row .contact-form form textarea {
   border-bottom: 2px solid #2d2424;
+}
+main section .container .row .contact-form form .beige {
+  color: #e0c097;
 }
 main section .container .row .contact-form form label {
   color: #2d2424;
@@ -11835,15 +11844,28 @@ main section .container .row .contact-form form button:hover, main section .cont
 /* Variables */
 /*Styles section */
 main {
-  margin-top: 2%;
+  /*margin-top: 2%;*/
 }
 main .container .bg-info-contacto {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://res.cloudinary.com/ojedaweb/image/upload/v1634498752/granos-de-cafe-blue-mountain_nrkqmb.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
   padding-top: 1.65%;
+}
+main .container .bg-info-contacto .map-responsive {
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+main .container .bg-info-contacto .map-responsive iframe {
+  left: 0;
+  top: 5rem;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 main .container .bg-info-contacto h2, main .container .bg-info-contacto .h2 {
   color: #e0c097;
@@ -11854,15 +11876,11 @@ main .container .bg-info-contacto h2, main .container .bg-info-contacto .h2 {
 main .container .bg-info-contacto p {
   color: #a8a8a6;
   font-size: 1.15rem;
-  padding: 0;
+  padding-left: 1rem;
 }
 main .container .bg-info-contacto p i {
   color: white;
-  margin: 0.75rem;
-}
-main .container .bg-info-contacto figure {
-  text-align: center;
-  padding-top: 1rem;
+  margin: 0.15rem;
 }
 
 /* Variables */

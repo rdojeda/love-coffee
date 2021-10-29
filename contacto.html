@@ -55,63 +55,57 @@
     <main class="main">
          <section>
             <div class="container-fluid bg-forms"></div>
-            <div class="container">
-               <div class="row">
-                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 bg-info-contacto">
-                        <h2>Detalles de Contacto</h2>
-                        <p><i class="fas fa-map-marker-alt fa-2x"></i>Las Heras 1850 - Recoleta CABA- Argentina </p>
-                        <p><i class="fas fa-envelope fa-2x"></i>contacto@lovecoffee.com.ar</p>
-                        <p><i class="fas fa-mobile-alt fa-2x"></i>+0800 123 4456</p>
-                        <figure>
-                            <img src="https://res.cloudinary.com/ojedaweb/image/upload/v1634253938/logo_touesv.png" class="img-fluid" alt="logo Love Coffee">
-                        </figure>
-                   </div>
-                   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <div class="contact-form">
-                            <h2>Envíanos unas líneas</h2>
-                            <form action="#" class="needs-validation" novalidate>
-                                <div class="col">
-                                    <label class="form-label" for="fullname">Nombres *</label>
-                                    <input type="text" class="form-control" name="fullname" required>
-                                    <div class="valid-feedback">
-                                        <p class="text-capitalize text-info">Campo OK</p>
+                <div class="container">
+                    <div class="row">
+                         <div class="d-flex justify-content-center">
+                            <div class="contact-form">
+                                <h2>Envíanos tu mensaje</h2>
+                                <form action="#" class="needs-validation" novalidate>
+                                    <div class="col">
+                                        <i class="fas fa-user beige"></i>
+                                        <label class="form-label" for="fullname"></i>Nombres *</label>
+                                        <input type="text" class="form-control" id="fullname" name="fullname" required>
+                                        <div class="valid-feedback">
+                                            <p class="text-capitalize text-info">Campo OK</p>
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            <p class="text-capitalize text-danger">Complete su nombre</p>
+                                        </div>
                                     </div>
-                                    <div class="invalid-feedback">
-                                        <p class="text-capitalize text-danger">Complete su nombre</p>
+                                    <div class="col">
+                                        <i class="fas fa-envelope beige"></i>
+                                        <label class="form-label" for="email">Email *</label>
+                                        <input class="form-control" type="email" id="email" name="email" required>
+                                        <div class="valid-feedback">
+                                            <p class="text-capitalize text-info">Campo OK</p>
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            <p class="text-capitalize text-danger">Complete su e-mail</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <label class="form-label" for="email">Email *</label>
-                                    <input class="form-control" type="email" name="email" required>
-                                     <div class="valid-feedback">
-                                        <p class="text-capitalize text-info">Campo OK</p>
+                                    <div class="col">
+                                        <i class="fas fa-sticky-note beige"></i>
+                                        <label class="form-label" for="message">Mensaje *</label> 
+                                        <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
+                                        <div class="valid-feedback">
+                                            <p class="text-capitalize text-info">Campo OK</p>
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            <p class="text-capitalize text-danger">Ingrese un mensaje</p>
+                                        </div>
                                     </div>
-                                    <div class="invalid-feedback">
-                                        <p class="text-capitalize text-danger">Complete su e-mail</p>
+                                    <div class="col">
+                                        <button type="submit">
+                                            Enviar
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <label class="form-label" for="message">Mensaje *</label> 
-                                    <textarea class="form-control" name="message" rows="3" required></textarea>
-                                     <div class="valid-feedback">
-                                          <p class="text-capitalize text-info">Campo OK</p>
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        <p class="text-capitalize text-danger">Ingrese un mensaje</p>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <button type="submit">
-                                        Enviar
-                                    </button>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
+                    
                         </div>
-                   
-                   </div>
+                    </div>
+                <!--End section formulario de contacto-->
                 </div>
-            <!--End section formulario de contacto-->
-            </div>
         </section>
     </main>
     <!--End Main-->
@@ -199,7 +193,7 @@
             </section>
             <section class="copy">
                 <p class="text-white text-center p-3">
-                <img src="https://res.cloudinary.com/ojedaweb/image/upload/v1634253938/logo_touesv.png" clsas="img-fluid" alt="logo Love Coffe" />
+                <img src="https://res.cloudinary.com/ojedaweb/image/upload/v1634253938/logo_touesv.png" class="img-fluid" alt="logo Love Coffe" />
                     <p class="copy">Todos los derechos reservados &copy; copyright 2021 - <span>LOVE</span> COFFEE</p>
                 </p>
             </section>

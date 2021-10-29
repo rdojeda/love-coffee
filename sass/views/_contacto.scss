@@ -2,15 +2,29 @@
 
 /*Styles section */
 main{
-    margin-top: 2%;
+    /*margin-top: 2%;*/
     .container{
         .bg-info-contacto{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) ,url('https://res.cloudinary.com/ojedaweb/image/upload/v1634498752/granos-de-cafe-blue-mountain_nrkqmb.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 600px;
             padding-top: 1.65%;
+            .map-responsive{
+                 overflow:hidden;
+                 padding-bottom:50%;
+                 position:relative;
+                 height:0;
+                iframe{
+                      left:0;
+                      top:5rem;
+                      height:100%;
+                      width:100%;
+                      position:absolute;
+
+                }
+            }
             h2{
                 color: $beige-color;
                 padding-bottom: 0.5em;
@@ -20,16 +34,13 @@ main{
             p{
                 color: $gray-color;
                 font-size: 1.15rem;
-                padding: 0;
+                padding-left: 1rem;
                 i{
                     color: white;
-                    margin: 0.75rem;
+                    margin: 0.15rem;
                 }
             }
-            figure{
-                text-align: center;
-                padding-top: 1rem;
-            }
+           
         }
     }
 }
