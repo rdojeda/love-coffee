@@ -11508,53 +11508,64 @@ main section .bg-forms {
   width: 100%;
   height: 100vh;
 }
-main section .container .row .contact-form h2, main section .container .row .contact-form .h2 {
+main section .bg-color {
+  background-color: #f8f1e9;
+}
+main section .container-fluid .row .contact-form h2, main section .container-sm .row .contact-form h2, main section .container-md .row .contact-form h2, main section .container-lg .row .contact-form h2, main section .container-xl .row .contact-form h2, main section .container-xxl .row .contact-form h2, main section .container-fluid .row .contact-form .h2, main section .container-sm .row .contact-form .h2, main section .container-md .row .contact-form .h2, main section .container-lg .row .contact-form .h2, main section .container-xl .row .contact-form .h2, main section .container-xxl .row .contact-form .h2 {
   text-transform: uppercase !important;
   letter-spacing: 0.25em;
   padding: 1.5rem 1.5rem 0 1.5rem;
   font-weight: bolder;
   color: #5c3d2e;
 }
-main section .container .row .contact-form form {
+main section .container-fluid .row .contact-form form, main section .container-sm .row .contact-form form, main section .container-md .row .contact-form form, main section .container-lg .row .contact-form form, main section .container-xl .row .contact-form form, main section .container-xxl .row .contact-form form {
   padding: 3em;
 }
-main section .container .row .contact-form form input, main section .container .row .contact-form form textarea, main section .container .row .contact-form form button {
-  border: none;
-  outline: 0;
+main section .container-fluid .row .contact-form form input, main section .container-sm .row .contact-form form input, main section .container-md .row .contact-form form input, main section .container-lg .row .contact-form form input, main section .container-xl .row .contact-form form input, main section .container-xxl .row .contact-form form input, main section .container-fluid .row .contact-form form textarea, main section .container-sm .row .contact-form form textarea, main section .container-md .row .contact-form form textarea, main section .container-lg .row .contact-form form textarea, main section .container-xl .row .contact-form form textarea, main section .container-xxl .row .contact-form form textarea, main section .container-fluid .row .contact-form form button, main section .container-sm .row .contact-form form button, main section .container-md .row .contact-form form button, main section .container-lg .row .contact-form form button, main section .container-xl .row .contact-form form button, main section .container-xxl .row .contact-form form button {
+  border: 0;
+  outline: none;
   background: none;
   color: #2d2424;
+  width: 100%;
 }
-main section .container .row .contact-form form input[type=time]::-webkit-calendar-picker-indicator {
-  background: none;
+main section .container-fluid .row .contact-form form input, main section .container-sm .row .contact-form form input, main section .container-md .row .contact-form form input, main section .container-lg .row .contact-form form input, main section .container-xl .row .contact-form form input, main section .container-xxl .row .contact-form form input, main section .container-fluid .row .contact-form form textarea, main section .container-sm .row .contact-form form textarea, main section .container-md .row .contact-form form textarea, main section .container-lg .row .contact-form form textarea, main section .container-xl .row .contact-form form textarea, main section .container-xxl .row .contact-form form textarea {
+  border-bottom: 2px solid #5c3d2e;
+  background-color: #f8f1e9;
 }
-main section .container .row .contact-form form input[type=date]::-webkit-calendar-picker-indicator {
-  background: none;
+main section .container-fluid .row .contact-form form input:focus, main section .container-sm .row .contact-form form input:focus, main section .container-md .row .contact-form form input:focus, main section .container-lg .row .contact-form form input:focus, main section .container-xl .row .contact-form form input:focus, main section .container-xxl .row .contact-form form input:focus, main section .container-fluid .row .contact-form form input:active, main section .container-sm .row .contact-form form input:active, main section .container-md .row .contact-form form input:active, main section .container-lg .row .contact-form form input:active, main section .container-xl .row .contact-form form input:active, main section .container-xxl .row .contact-form form input:active, main section .container-fluid .row .contact-form form textarea:focus, main section .container-sm .row .contact-form form textarea:focus, main section .container-md .row .contact-form form textarea:focus, main section .container-lg .row .contact-form form textarea:focus, main section .container-xl .row .contact-form form textarea:focus, main section .container-xxl .row .contact-form form textarea:focus, main section .container-fluid .row .contact-form form textarea:active, main section .container-sm .row .contact-form form textarea:active, main section .container-md .row .contact-form form textarea:active, main section .container-lg .row .contact-form form textarea:active, main section .container-xl .row .contact-form form textarea:active, main section .container-xxl .row .contact-form form textarea:active {
+  border: none;
+  outline: 0;
 }
-main section .container .row .contact-form form input, main section .container .row .contact-form form textarea {
-  border-bottom: 2px solid #2d2424;
+main section .container-fluid .row .contact-form form textarea, main section .container-sm .row .contact-form form textarea, main section .container-md .row .contact-form form textarea, main section .container-lg .row .contact-form form textarea, main section .container-xl .row .contact-form form textarea, main section .container-xxl .row .contact-form form textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
 }
-main section .container .row .contact-form form .beige {
+main section .container-fluid .row .contact-form form .beige, main section .container-sm .row .contact-form form .beige, main section .container-md .row .contact-form form .beige, main section .container-lg .row .contact-form form .beige, main section .container-xl .row .contact-form form .beige, main section .container-xxl .row .contact-form form .beige {
   color: #e0c097;
 }
-main section .container .row .contact-form form label {
+main section .container-fluid .row .contact-form form label, main section .container-sm .row .contact-form form label, main section .container-md .row .contact-form form label, main section .container-lg .row .contact-form form label, main section .container-xl .row .contact-form form label, main section .container-xxl .row .contact-form form label {
   color: #2d2424;
   font-size: 1.35rem;
   font-weight: 500;
 }
-main section .container .row .contact-form form button {
+main section .container-fluid .row .contact-form form button, main section .container-sm .row .contact-form form button, main section .container-md .row .contact-form form button, main section .container-lg .row .contact-form form button, main section .container-xl .row .contact-form form button, main section .container-xxl .row .contact-form form button {
   padding: 0.5em;
   background-color: #e0c097;
-  color: white;
+  color: #2d2424;
   text-transform: uppercase;
   width: 100%;
   margin-top: 3em;
   letter-spacing: 0.2em;
+  font-weight: bold;
+  cursor: pointer;
 }
-main section .container .row .contact-form form button:hover, main section .container .row .contact-form form button:focus {
+main section .container-fluid .row .contact-form form button:hover, main section .container-sm .row .contact-form form button:hover, main section .container-md .row .contact-form form button:hover, main section .container-lg .row .contact-form form button:hover, main section .container-xl .row .contact-form form button:hover, main section .container-xxl .row .contact-form form button:hover, main section .container-fluid .row .contact-form form button:focus, main section .container-sm .row .contact-form form button:focus, main section .container-md .row .contact-form form button:focus, main section .container-lg .row .contact-form form button:focus, main section .container-xl .row .contact-form form button:focus, main section .container-xxl .row .contact-form form button:focus {
   background: #ce6d06;
   color: #ede9e1;
   transition: background-color 1s ease-out;
   outline: 0;
+  border: none;
 }
 
 /* Variables */

@@ -13,7 +13,11 @@ main{
             height: 100vh;
             
         }
-        .container{
+
+       .bg-color{
+          background-color: $light-color;
+        }
+        .container-fluid{
             
             .row{
            
@@ -29,20 +33,27 @@ main{
                        
                         padding: 3em;
                         input, textarea, button{
-                            border: none;
-                            outline: 0;
+                            border: 0;
+                            outline: none;
                             background: none;
                             color: $dark-color;
+                            width: 100%;
                             
                         }
-                        input[type="time"]::-webkit-calendar-picker-indicator {
-                             background: none;
-                        }
-                        input[type="date"]::-webkit-calendar-picker-indicator {
-                             background: none;
-                        }
+                  
                         input, textarea{
-                            border-bottom: 2px solid $dark-color;
+                            border-bottom: 2px solid $coffee-color;
+                            background-color: $light-color;
+                          
+                            &:focus, &:active{
+                                border: none;
+                                outline: 0;
+                            }
+                        }
+                        textarea{
+                            resize: vertical;
+                            max-height: 150px;
+                            min-height: 50px;
                         }
                         .beige{
                                 color: $beige-color;
@@ -57,21 +68,27 @@ main{
                         button{
                             padding: 0.5em;
                             background-color: $beige-color;
-                            color: white;
+                            color: $dark-color;
                             text-transform: uppercase;
                             width: 100%;
                             margin-top: 3em;
                             letter-spacing: 0.2em;
+                            font-weight: bold;
+                            cursor: pointer;
                             &:hover, &:focus{
                                 background: #ce6d06;
                                 color: #ede9e1;
                                 transition: background-color 1s ease-out;
                                 outline: 0;
+                                border: none;
                             }
+                           
                         }
                     }
                 }
             }
         }
+   
+    
     }
 }
