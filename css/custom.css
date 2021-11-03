@@ -12010,3 +12010,40 @@ main .container .bg-info-contacto p i {
   text-align: center;
   padding-bottom: 1.5rem;
 }
+
+.container-404 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/ojedaweb/image/upload/v1635713885/granos-cafe-taza-cafe-efecto-salpicadura-escritorio-marron_28943-559_yslsng.jpg");
+  background-position: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.container-404 .container-404__content {
+  text-align: center;
+  color: white;
+}
+.container-404 .container-404__content .container-404__link a {
+  color: blanchedalmond;
+  font-size: 2.5rem;
+  text-shadow: 3px 1px black;
+  padding-bottom: 5rem;
+}
+.container-404 .container-404__content .container-404__link {
+  padding-top: 8rem;
+}
+.container-404 .container-404__content .container-404__titles h1, .container-404 .container-404__content .container-404__titles .h1 {
+  font-size: 10rem;
+}
+.container-404 .container-404__content .container-404__titles h2, .container-404 .container-404__content .container-404__titles .h2 {
+  font-size: 4rem;
+}
+.container-404 .container-404__content .mg-top {
+  margin-top: 10rem;
+}
