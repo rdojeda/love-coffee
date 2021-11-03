@@ -11,25 +11,14 @@ main{
             background-size: cover;
             height: 600px;
             padding-top: 1.65%;
-            .map-responsive{
-                 overflow:hidden;
-                 padding-bottom:50%;
-                 position:relative;
-                 height:0;
-                iframe{
-                      left:0;
-                      top:5rem;
-                      height:100%;
-                      width:100%;
-                      position:absolute;
-
-                }
+         
             }
             h2{
                 color: $beige-color;
                 padding-bottom: 0.5em;
                 text-align: center;
                 text-transform: uppercase;
+                
             }
             p{
                 color: $gray-color;
@@ -43,4 +32,3 @@ main{
            
         }
     }
-}
