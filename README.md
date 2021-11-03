@@ -12,6 +12,7 @@ Love Coffe es un sitio web diseñado para una cafetería
 * [HTML5]("https://dev.w3.org/html5/spec-LC/")
 * [CSS3]("https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/")
 * [JavaScript]("https://www.javascript.com/")
+* [Riot - Radical Image Optimization tool]("https://riot-optimizer.com/")
 
 ## Instalación  
 
